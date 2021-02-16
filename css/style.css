@@ -66,6 +66,10 @@ li > a{
     color: yellow;
 }
 
+.container > img{
+    margin-left: 10%;
+}
+
 #third .container > div{
     color: green;
 }
