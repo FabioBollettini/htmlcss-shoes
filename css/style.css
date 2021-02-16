@@ -2,25 +2,70 @@
     margin: 0%;
     padding: 0%;
     box-sizing: border-box;
+    font-family: 'Rubik Mono One', sans-serif;
 }
 
-body > div{
+html{
+    scroll-behavior: smooth;
+}
+
+/* BACKGROUNDS */
+body > .background{
     position: relative;
     height: 100vh;
     background-color: red;
+    
 }
 
-div > img{
+.background:nth-child(2){
+    background-color: green;
+}
+
+.background:nth-child(3){
+    background-color: yellow;
+}
+
+/* LISTE */
+ul{
+    position: absolute;
+    right: 20px;
+}
+
+li{
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+    list-style: none;
+    margin-top: 20px;
+    margin-left: 30px;
+    border-radius: 50%;
+    background-color: white;
+    color:black;
+    text-align: center;
+    line-height: 50px;
+    font-size: 25px;
+}
+
+li > a{
+    text-decoration: none;
+}
+/* CONTAINERS */
+.container{
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
 
-div:nth-child(2){
-    background-color: green;
+.container > div{
+    margin: auto;
+    font-size: 50px;
+    text-transform: uppercase;
+    position: relative;
+    text-align: center;
+    color: yellow;
 }
 
-div:nth-child(3){
-    background-color: yellow;
+#third .container > div{
+    color: green;
 }
