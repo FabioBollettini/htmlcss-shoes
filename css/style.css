@@ -1,0 +1,26 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+body > div{
+    position: relative;
+    height: 100vh;
+    background-color: red;
+}
+
+div > img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+div:nth-child(2){
+    background-color: green;
+}
+
+div:nth-child(3){
+    background-color: yellow;
+}
